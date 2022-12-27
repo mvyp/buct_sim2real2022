@@ -111,7 +111,7 @@ roslaunch buct_navigation multi_goals.launch
 
 ![9](imgs/9.png)
 
-### 3.9 (1.1205, 1.5891, -1.1990)               不
+### 3.9 (1.1205, 1.5891, -1.1990)               
 
 ![10](imgs/10.png)
 
@@ -125,29 +125,8 @@ roslaunch buct_navigation slam.launch
 
 Configuration files in **buct_navigation/param/cartographer**
 
-## 5. Smach State Machine
-### 5.1 Changes Statement:
-adding files: 
-```sh
-smach_main.py
-detect_cube.py
-grasp_cube.py
-place_cube.py
-multi_go.py
-navigaton_smach.launch
-#backup the older version with _ 
-```
-updating package.xml&cmakelist
 
-### 5.2 Run
-```sh
-sudo apt-get install ros-noetic-executive-smach
-roslaunch buct_navigation navigation_smach.launch
-``` 
-### 5.3 Bugs
-EP can't detect all the three numbers at the first step and grasping cube has a loooooooow success rate.
-
-### 6 Bag
+### 5 Bag
 ```sh
 # Launch ep_description
 cd ICRA-RM-Sim2Real/docker_client
